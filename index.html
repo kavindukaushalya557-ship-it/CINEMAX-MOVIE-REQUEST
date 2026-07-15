@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CINEMAX HD | Premium Movie Request</title>
+
+    <meta name="description"
+        content="Request your favorite Movies and TV Series with CINEMAX HD. Fast uploads, Sinhala subtitles and premium community.">
+
+    <meta name="keywords"
+        content="Movies, TV Series, Sinhala Subtitles, CINEMAX HD, Movie Request">
+
+    <meta name="author"
+        content="Mr. Kavindu Kaushalya">
+
+    <meta name="theme-color"
+        content="#e50914">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="CINEMAX HD">
+
+    <meta property="og:description"
+        content="Premium Movie Request Platform">
+
+    <meta property="og:type"
+        content="website">
+
+    <link rel="icon"
+        href="assets/logo.png">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Animate On Scroll -->
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!--==========================
+PRELOADER
+===========================-->
+
+<div id="preloader">
+
+<div class="loader-ring"></div>
+
+<h2>
+
+CINEMAX
+
+<span>HD</span>
+
+</h2>
+
+</div>
+
+<!--==========================
+CUSTOM CURSOR
+===========================-->
+
+<div id="cursor"></div>
+
+<!--==========================
+NAVBAR
+===========================-->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#"
+class="logo">
+
+<i class="fas fa-film"></i>
+
+<span>CINEMAX HD</span>
+
+</a>
+
+<ul class="nav-menu">
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#request">
+
+Request
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#latest">
+
+Latest
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#community">
+
+Community
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#about">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-actions">
+
+<button id="themeToggle">
+
+<i class="fas fa-moon"></i>
+
+</button>
+
+<button id="mobileMenu">
+
+<i class="fas fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--==========================
+HERO SECTION
+===========================-->
+
+<section id="home"
+class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content"
+data-aos="fade-up">
+
+<h1>
+
+Welcome To
+
+<span>
+
+CINEMAX HD
+
+</span>
+
+</h1>
+
+<p>
+
+Request Your Favorite Movies & TV Series
+
+with Lightning Fast Uploads
+
+and Premium Quality.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#request"
+class="btn-primary">
+
+<i class="fas fa-paper-plane"></i>
+
+Request Now
+
+</a>
+
+<a href="#community"
+class="btn-secondary">
+
+<i class="fab fa-whatsapp"></i>
+
+Join Community
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image"
+data-aos="zoom-in">
+
+<img src="assets/hero.png"
+alt="Hero">
+
+</div>
+
+</section>
+<!-- ===================================== -->
+<!-- PREMIUM REQUEST SECTION -->
+<!-- ===================================== -->
+
+<section id="request" class="request-section">
+
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+            <h2>🎬 Movie Request Form</h2>
+            <p>
+                Fill the details below and submit your request.
+            </p>
+        </div>
+
+        <div class="request-card glass" data-aos="zoom-in">
+
+            <form id="movieForm">
+
+                <!-- Name -->
+
+                <div class="input-group">
+
+                    <label>
+                        <i class="fa-solid fa-user"></i>
+                        Full Name (Optional)
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your name">
+
+                </div>
+
+                <!-- WhatsApp -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        <i class="fab fa-whatsapp"></i>
+
+                        WhatsApp Number *
+
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="waNumber"
+                        maxlength="10"
+                        required
+                        placeholder="07XXXXXXXX">
+
+                </div>
+
+                <!-- Movie -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        <i class="fa-solid fa-film"></i>
+
+                        Movie / TV Series *
+
+                    </label>
+
+                    <div class="movie-search">
+
+                        <input
+                            type="text"
+                            id="movieName"
+                            autocomplete="off"
+                            required
+                            placeholder="Search Movie...">
+
+                        <button
+                            type="button"
+                            id="voiceBtn">
+
+                            <i class="fas fa-microphone"></i>
+
+                        </button>
+
+                    </div>
+
+                    <ul id="suggestionsList"></ul>
+
+                </div>
+
+                <!-- Language -->
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>
+
+                            <i class="fas fa-language"></i>
+
+                            Language
+
+                        </label>
+
+                        <select id="language">
+
+                            <option>English</option>
+
+                            <option>Sinhala Dubbed</option>
+
+                            <option>Tamil</option>
+
+                            <option>Hindi</option>
+
+                            <option>Korean</option>
+
+                            <option>Japanese</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Year -->
+
+                    <div class="input-group">
+
+                        <label>
+
+                            <i class="fas fa-calendar"></i>
+
+                            Release Year
+
+                        </label>
+
+                        <input
+                            type="number"
+                            id="year"
+                            placeholder="2026">
+
+                    </div>
+
+                </div>
+
+                <!-- Request Type -->
+
+                <div class="input-group">
+
+                    <label>
+
+                        <i class="fas fa-layer-group"></i>
+
+                        Request Type
+
+                    </label>
+
+                    <select id="requestType">
+
+                        <option value="movie">
+
+                            🎬 Movie
+
+                        </option>
+
+                        <option value="series">
+
+                            📺 TV Series
+
+                        </option>
+
+                        <option value="premium">
+
+                            💎 Premium Series
+
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- Note -->
+
+                <div class="notice-box">
+
+                    <h4>
+
+                        ⚠ Important Notice
+
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Search the group before requesting.
+                        </li>
+
+                        <li>
+                            TV Series with many episodes may require Premium.
+                        </li>
+
+                        <li>
+                            Wrong requests will be ignored.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    <i class="fas fa-paper-plane"></i>
+
+                    Submit Request
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================================= -->
+<!-- LATEST REQUESTS SECTION -->
+<!-- ========================================= -->
+
+<section id="latest" class="latest-section">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>🔥 Latest Movie Requests</h2>
+            <p>
+                See the newest requests submitted by our community.
+            </p>
+        </div>
+
+        <!-- Search & Filter -->
+
+        <div class="request-toolbar" data-aos="fade-up">
+
+            <div class="search-box">
+
+                <i class="fas fa-search"></i>
+
+                <input
+                    type="text"
+                    id="searchRequest"
+                    placeholder="Search movie...">
+
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active"
+                        data-filter="all">
+
+                    All
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="movie">
+
+                    Movies
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="series">
+
+                    TV Series
+
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="completed">
+
+                    Completed
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Firebase Requests -->
+
+        <div id="requestContainer"
+             class="request-grid">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- TOP REQUESTED MOVIES -->
+<!-- ========================================= -->
+
+<section class="top-movies">
+
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+
+            <h2>
+
+                ⭐ Most Requested Movies
+
+            </h2>
+
+            <p>
+
+                Trending requests from CINEMAX HD users.
+
+            </p>
+
+        </div>
+
+        <div class="movie-slider">
+
+            <div class="movie-card">
+
+                <img src="assets/posters/poster1.jpg"
+                     alt="Movie">
+
+                <div class="movie-info">
+
+                    <h3>Movie Name</h3>
+
+                    <span>
+
+                        ⭐ 8.9 IMDb
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="assets/posters/poster2.jpg"
+                     alt="Movie">
+
+                <div class="movie-info">
+
+                    <h3>Movie Name</h3>
+
+                    <span>
+
+                        ⭐ 9.1 IMDb
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="movie-card">
+
+                <img src="assets/posters/poster3.jpg"
+                     alt="Movie">
+
+                <div class="movie-info">
+
+                    <h3>Movie Name</h3>
+
+                    <span>
+
+                        ⭐ 8.7 IMDb
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- COMMUNITY SECTION -->
+<!-- ========================================= -->
+
+<section id="community"
+         class="community-section">
+
+    <div class="container">
+
+        <div class="community-card"
+             data-aos="zoom-in">
+
+            <i class="fab fa-whatsapp"></i>
+
+            <h2>
+
+                Join Our WhatsApp Community
+
+            </h2>
+
+            <p>
+
+                Stay updated with new uploads,
+
+                announcements,
+
+                and exclusive releases.
+
+            </p>
+
+            <a href="#"
+               class="community-btn"
+               target="_blank">
+
+                <i class="fab fa-whatsapp"></i>
+
+                Join Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LIVE STATS -->
+<!-- ========================================= -->
+
+<section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat-box">
+
+            <i class="fas fa-film"></i>
+
+            <h2 class="counter"
+                data-target="5000">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Movies
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-tv"></i>
+
+            <h2 class="counter"
+                data-target="1200">
+
+                0
+
+            </h2>
+
+            <p>
+
+                TV Series
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-users"></i>
+
+            <h2 class="counter"
+                data-target="25000">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Members
+
+            </p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-download"></i>
+
+            <h2 class="counter"
+                data-target="150000">
+
+                0
+
+            </h2>
+
+            <p>
+
+                Downloads
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================================== -->
+<!-- MOVIE DETAILS MODAL -->
+<!-- ===================================== -->
+
+<div id="movieModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal" class="close-btn">
+            &times;
+        </span>
+
+        <div class="modal-grid">
+
+            <div class="modal-poster">
+
+                <img
+                    id="modalPoster"
+                    src="assets/no-image.png"
+                    alt="Movie Poster">
+
+            </div>
+
+            <div class="modal-details">
+
+                <h2 id="modalTitle">
+
+                    Movie Title
+
+                </h2>
+
+                <div class="movie-rating">
+
+                    ⭐ IMDb :
+                    <span id="modalRating">
+
+                        0.0
+
+                    </span>
+
+                </div>
+
+                <div class="story-box">
+
+                    <h4>
+
+                        🇱🇰 Sinhala Story
+
+                    </h4>
+
+                    <p id="modalPlot">
+
+                        Loading...
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="trailer-box">
+
+            <iframe
+                id="modalTrailer"
+                src=""
+                frameborder="0"
+                allowfullscreen>
+
+            </iframe>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================================== -->
+<!-- BACK TO TOP -->
+<!-- ===================================== -->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ===================================== -->
+<!-- FLOATING WHATSAPP -->
+<!-- ===================================== -->
+
+<a
+href="https://wa.me/94760595208"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ===================================== -->
+<!-- TOAST -->
+<!-- ===================================== -->
+
+<div id="toast">
+
+Success
+
+</div>
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+
+🎬 CINEMAX HD
+
+</h3>
+
+<p>
+
+The Ultimate Movie Request Platform.
+
+Fast Uploads.
+
+Premium Experience.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Quick Links
+
+</h4>
+
+<ul>
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#request">
+
+Request
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#latest">
+
+Latest
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#community">
+
+Community
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+
+Follow Us
+
+</h4>
+
+<div class="social-icons">
+
+<a href="#">
+
+<i class="fab fa-facebook"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-telegram"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026
+
+CINEMAX HD
+
+All Rights Reserved
+
+<br>
+
+Designed & Developed by
+
+<b>
+
+Mr. Kavindu Kaushalya
+
+</b>
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- ===================================== -->
+<!-- JAVASCRIPT LIBRARIES -->
+<!-- ===================================== -->
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+
+once:true
+
+});
+
+</script>
+
+<!-- MAIN JS -->
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
